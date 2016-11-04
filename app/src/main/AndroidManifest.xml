@@ -11,30 +11,69 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         android:windowSoftInputMode="stateHidden">
-        <activity android:name=".LoginActivity" android:label="@string/app_name">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AcceuilActivity" android:label="@string/app_name"
-            android:windowSoftInputMode="adjustNothing">
+        <activity
+            android:name=".AcceuilActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".CentraleActivity"
             android:label="@string/centrale"
-            android:windowSoftInputMode="adjustNothing">
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="landscape">
         </activity>
         <activity android:name=".GestionPersonneActivity"
             android:label="@string/creerPersonne"
-            android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".ExterneActivity" android:label="@string/externe" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".GestionExterneActivity" android:label="@string/gestionExterne" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".GestionEventActivity" android:label="@string/gestionEvent" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".PresenceActivity" android:label="@string/presence" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".ChangePasswordActivity" android:label="@string/gestionMDP" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".FileBrowserActivity" android:label="@string/file_browser" android:windowSoftInputMode="adjustNothing"/>
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ExterneActivity"
+            android:label="@string/externe"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".GestionExterneActivity"
+            android:label="@string/gestionExterne"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".GestionEventActivity"
+            android:label="@string/gestionEvent"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".PresenceActivity"
+            android:label="@string/presence"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="@string/gestionMDP"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".FileBrowserActivity"
+            android:label="@string/file_browser"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="landscape">
+        </activity>
     </application>
 
 </manifest>
