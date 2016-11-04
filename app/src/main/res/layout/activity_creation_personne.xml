@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeCreationPersonne"
+    android:background="@drawable/centrale">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/editTextNom"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:editable="false"
+        android:inputType="textNoSuggestions|textPersonName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:background="#ffffff"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/editTextPrenom"
+        android:layout_below="@+id/editTextNom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:inputType="textNoSuggestions|textPersonName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:background="#ffffff"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/editTextDateNaissance"
+        android:layout_below="@+id/editTextPrenom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:inputType="date"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:background="#ffffff"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Créer"
+        android:id="@+id/buttonCreerPersonne"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonSupprimerPersonne"
+        android:layout_toEndOf="@+id/buttonSupprimerPersonne" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextRecherchePersonnePourSupprimer"
+        android:layout_alignTop="@+id/editTextNom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="133dp"
+        android:background="#ffffff"/>
+
+    <ListView
+        android:layout_width="630dp"
+        android:layout_height="250dp"
+        android:id="@+id/listViewPersonnePourSupprimer"
+        android:layout_alignTop="@+id/editTextPrenom"
+        android:layout_alignLeft="@+id/editTextRecherchePersonnePourSupprimer"
+        android:layout_alignStart="@+id/editTextRecherchePersonnePourSupprimer"
+        android:choiceMode="singleChoice"
+        android:background="#ffffff"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Modifier"
+        android:id="@+id/buttonModifierPersonne"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Supprimer"
+        android:id="@+id/buttonSupprimerPersonne"
+        android:layout_alignTop="@+id/buttonModifierPersonne"
+        android:layout_toRightOf="@+id/buttonModifierPersonne"
+        android:layout_toEndOf="@+id/buttonModifierPersonne"
+        android:layout_marginLeft="30dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="630dp"
+        android:layout_height="50dp"
+        android:id="@+id/textViewPersonneSelectionnee"
+        android:layout_above="@+id/buttonModifierPersonne"
+        android:layout_alignLeft="@+id/listViewPersonnePourSupprimer"
+        android:layout_alignStart="@+id/listViewPersonnePourSupprimer"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp" />
+</RelativeLayout>

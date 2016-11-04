@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeCreationPersonne"
+    android:background="@drawable/centrale">
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/distance_left"
+        android:layout_marginRight="@dimen/distance_right"
+        android:id="@+id/editTextNom"
+        android:editable="false"
+        android:inputType="textNoSuggestions|textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+        android:singleLine="true"
+        android:hint="@string/nom"
+        android:background="#50ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="@dimen/size_text"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/editTextPrenom"
+        android:layout_below="@+id/editTextNom"
+        android:layout_marginRight="@dimen/distance_right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:inputType="textNoSuggestions|textPersonName"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/editTextNom"
+        android:singleLine="true"
+        android:hint="@string/prenom"
+        android:background="#50ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="@dimen/size_text"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/editTextDateNaissance"
+        android:layout_below="@+id/editTextPrenom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="@dimen/distance_right"
+        android:inputType="textNoSuggestions"
+        android:singleLine="true"
+        android:hint="@string/promo"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/editTextNom"
+        android:background="#50ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="@dimen/size_text"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Créer"
+        android:layout_marginRight="@dimen/distance_right"
+        android:id="@+id/buttonCreerPersonne"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/buttonSupprimerPersonne"
+        android:background="#50ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="@dimen/size_button"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="@dimen/distance_right"
+        android:text="Importer"
+        android:id="@+id/buttonImporterListe"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/buttonCreerPersonne"
+        android:layout_toStartOf="@+id/buttonCreerPersonne"
+        android:layout_alignTop="@+id/buttonCreerPersonne"
+        android:background="#50ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="@dimen/size_button"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextRecherchePersonnePourSupprimer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="true"
+        android:hint="Recherche"
+        android:background="#50ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="@dimen/size_text"
+        android:layout_marginLeft="@dimen/distance_left" />
+
+    <ListView
+        android:layout_width="315dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/distance_top"
+        android:id="@+id/listViewPersonnePourSupprimer"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/editTextRecherchePersonnePourSupprimer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="false"
+        android:background="#50ffffff"
+        android:layout_marginLeft="@dimen/distance_left" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/distance_left"
+        android:text="Modifier"
+        android:id="@+id/buttonModifierPersonne"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editTextRecherchePersonnePourSupprimer"
+        android:layout_alignEnd="@+id/editTextRecherchePersonnePourSupprimer"
+        android:background="#50ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="@dimen/size_text"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Supprimer"
+        android:id="@+id/buttonSupprimerPersonne"
+        android:layout_alignTop="@+id/buttonModifierPersonne"
+        android:layout_toRightOf="@+id/buttonModifierPersonne"
+        android:layout_toEndOf="@+id/buttonModifierPersonne"
+        android:layout_marginLeft="@dimen/distance_left"
+        android:layout_alignParentBottom="true"
+        android:background="#50ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="@dimen/size_text"
+        />
+
+    <TextView
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/distance_left"
+        android:layout_alignBottom="@dimen/distance_bottom"
+        android:id="@+id/textViewPersonneSelectionnee"
+        android:background="#50ffffff"
+        android:layout_above="@+id/buttonModifierPersonne"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textSize="@dimen/size_text"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Tout supprimer"
+        android:id="@+id/buttonSupprimerTous"
+        android:layout_alignTop="@+id/buttonModifierPersonne"
+        android:layout_toRightOf="@+id/buttonSupprimerPersonne"
+        android:layout_toEndOf="@+id/buttonModifierPersonne"
+        android:layout_marginLeft="@dimen/distance_left"
+        android:layout_alignParentBottom="true"
+        android:background="#50ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="@dimen/size_text"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

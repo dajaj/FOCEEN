@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Foceen</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="creerPersonne">Gestion Personne</string>
+    <string name="gestionEvent">Gestion Event</string>
+    <string name="gestionExterne">Gestion Externe</string>
+    <string name="centrale">Centrale</string>
+    <string name="externe">Externes</string>
+    <string name="accueil">Accueil</string>
+    <string name="presence_centrale">Centrale - Presence</string>
+    <string name="presence_externe">Ecole Externe - Presence</string>
+    <string name="presence">Presence</string>
+    <string name="retour">Retour</string>
+    <string name="password">Mot de passe</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="promo">Promo</string>
+    <string name="recherche">Recherche</string>
+    <string name="ancien_password">Ancien Mot de Passe</string>
+    <string name="nouveau_password">Nouveau Mot de Passe</string>
+    <string name="confirmation_password">Confirmer </string>
+    <string name="nouveau_externe">Nouvelle Ecole Externe</string>
+    <string name="date">Date</string>
+    <string name="gestionMDP">Gestion mot de passe</string>
+    <string name="file_browser">File Browser</string>
+    <string name="legal">En vertu de la loi Informatique et Libertés, vous disposez d\'un droit de rectification et suppression de vos données.\nPour toute information : foceen@centrale-marseille.fr</string>
+</resources>
